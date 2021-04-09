@@ -15,7 +15,7 @@ const refs = {
 refs.stop.disabled = true;
 let interval = null;
 
-function startChangeBgClr() {
+function startColorSwitch() {
     interval = setInterval(() => {
         refs.start.disabled = true;
         refs.stop.disabled = false;
@@ -24,7 +24,7 @@ function startChangeBgClr() {
     },1000)
 }
 
-function stopChangeBgClr() {
+function stopColorSwitch() {
     refs.start.disabled = false;
     refs.start.classList.remove('disabled');
     
@@ -35,6 +35,6 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-refs.start.addEventListener('click', startChangeBgClr);
-refs.stop.addEventListener('click', stopChangeBgClr);
+refs.start.addEventListener('click', startColorSwitch);
+refs.stop.addEventListener('click', stopColorSwitch);
 
