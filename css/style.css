@@ -1,0 +1,26 @@
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions-btn {
+  margin-top: 300px;
+  margin-right: 5px;
+  padding: 20px 30px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgb(44, 212, 44);
+  color: rgb(255, 255, 255);
+}
+
+.actions-btn:last-child {
+  background-color: red;
+}
+
+.disabled {
+  background-color: #808080;
+  color: #000000;
+}
